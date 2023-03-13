@@ -8,13 +8,26 @@
 </head>
 
 <body>
+
+    <div id="preloader"></div>
+    <style>
+        #preloader {
+            background: #000000 url(preloader.gif) no-repeat center center;
+            background-size: 20%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
     <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <img src="https://th.bing.com/th/id/R.2c1bfc3d93428fdd65b1af2e42a9d102?rik=452cQTitGUXtjQ&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f8%2fAnonymous-Mask-PNG-Download-Image.png&ehk=EeqTPlTKyrtje0nQPOXgAdGC%2bRpcX%2b6gUnlbTCDxKcU%3d&risl=&pid=ImgRaw&r=0"
                     fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-15 h-20 text-white" viewBox="0 0 24 24" onclick="window.location.href='index.html';">
-                <p style="background-image: url('https://leanplum.wpengine.com/wp-content/uploads/2020/03/app-annie-hero-1920x1080.jpg');">
+                <p
+                    style="background-image: url('https://leanplum.wpengine.com/wp-content/uploads/2020/03/app-annie-hero-1920x1080.jpg');">
                     <style>
                         body {
                             margin: 0;
@@ -38,13 +51,14 @@
     </header>
     <section class="text-white-600 body-font">
         <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://hackarence.files.wordpress.com/2023/01/me2.png">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                src="https://hackarence.w3spaces.com/Me2.png">
             <div class="text-center lg:w-2/3 w-full">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">
                     <p style="color: rgb(65, 64, 64); "> This is,
                         <span>Hackarence</span>
                 </h1>
-                <Div Class="Typing-Text">»» Cyber Security Consultant & Advisor ««</Div>
+                <Div Class="Typing-Text">»» Cyber Security Advisor ««</Div>
                 <style>
                     .title-font {
                         color: #ffffff;
@@ -188,14 +202,9 @@
                         <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs"><b>Drop a mail mail
                                 on -</b></h2>
                         <a class="text-indigo-500 leading-relaxed">
-                            <br>hackarence@gmail.com<br>hackarence@consultant.com</a>
+                            <br>hackarence@gmail.com</a>
                         <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4"> </h2>
                         <p class="leading-relaxed"> </p>
-                        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"></a>
-                        <a href="#" onclick="window.location.href='https://www.facebook.com/hackarence';"
-                            class="btn">facebook</a>
-                        <a href="#" onclick="window.location.href='https://instagram.com/hackarence';"
-                            class="btn">instagram</a>
                         <br>
                         <a href="#" onclick="window.location.href='https://twitter.com/hackarence';"
                             class="btn">twitter</a>
@@ -248,13 +257,6 @@
                         target="_blank">@Hackarence</a>
                 </p>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                    <a class="text-gray-500">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            class="w-5 h-5" viewBox="0 0 24 24"
-                            onclick="window.location.href='https://www.facebook.com/Hackarence';">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                    </a>
                     <a class="ml-3 text-gray-500">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-5 h-5" viewBox="0 0 24 24"
@@ -264,17 +266,16 @@
                             </path>
                         </svg>
                     </a>
-                    <a class="ml-3 text-grey-500">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24"
-                            onclick="window.location.href='https://www.instagram.com/Hackarence';">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                        </svg>
-                    </a>
                 </span>
             </div>
         </footer>
+
+        <script>
+            var loader = document.getElementById('preloader');
+            window.addEventListener('load', function () {
+                loader.style.display = 'none';
+            })
+        </script>
 </body>
 
 </html>
